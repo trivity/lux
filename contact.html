@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | K | Luxe Wellness</title>
+  <meta name="description" content="Get in touch with K | Luxe Wellness. Schedule your consultation, find our location in Aurora, CO, or send us a message.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/popups.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar scrolled" role="navigation" aria-label="Main navigation">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">K <span>|</span> Luxe Wellness</a>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="#book" class="nav-btn">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="contact-hero-content">
+      <span class="section-subtitle" style="color: var(--color-gold);">Get In Touch</span>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="book">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper fade-in">
+          <span class="section-subtitle">Send Us A Message</span>
+          <h2>Get In Touch</h2>
+          <p>Have a question or ready to book? Fill out the form below and we'll get back to you within 24 hours.</p>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+            
+            <div class="form-group full-width">
+              <label for="referral">How did you hear about us?</label>
+              <select id="referral" name="referral">
+                <option value="">Select an option</option>
+                <option value="google">Google Search</option>
+                <option value="social">Social Media</option>
+                <option value="friend">Friend or Family</option>
+                <option value="referral">Healthcare Provider</option>
+                <option value="event">Event or Workshop</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group full-width">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us about your skincare goals or any questions you have..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-card fade-in">
+            <h3>Visit Us</h3>
+            <p>
+              <strong>K | Luxe Wellness</strong><br>
+              22411 East Union Circle<br>
+              Aurora, CO 80015<br><br>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Get Directions →</a>
+            </p>
+          </div>
+          
+          <div class="contact-card fade-in">
+            <h3>Contact</h3>
+            <p>
+              <strong>Phone:</strong> <a href="tel:+17205550123">(720) 555-0123</a><br>
+              <strong>Email:</strong> <a href="mailto:hello@kluxewellness.com">hello@kluxewellness.com</a><br><br>
+              For booking inquiries, please call or use our online booking system.
+            </p>
+          </div>
+          
+          <div class="contact-card fade-in">
+            <h3>Hours of Operation</h3>
+            <table class="hours-table">
+              <tr>
+                <td>Monday – Friday</td>
+                <td>9:00 AM – 7:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10:00 AM – 5:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </table>
+          </div>
+          
+          <div class="contact-card fade-in">
+            <h3>Parking</h3>
+            <p>Complimentary parking is available in our private lot. Additional street parking is available on East Union Circle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="map-placeholder">
+      <p>Google Map Integration</p>
+      <p style="font-size: 1rem; color: var(--color-gray);">22411 East Union Circle, Aurora, CO 80015</p>
+      <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Open in Google Maps</a>
+    </div>
+  </section>
+
+  <!-- Directions Section -->
+  <section class="directions-section">
+    <div class="container">
+      <div class="directions-grid">
+        <div class="directions-content fade-in">
+          <span class="section-subtitle">Find Your Way</span>
+          <h2>Getting Here</h2>
+          <div class="gold-line" style="margin-left: 0; margin-bottom: var(--spacing-md);"></div>
+          <p>We're conveniently located in Aurora, just minutes from major highways and easily accessible from Denver and surrounding areas.</p>
+          <ul class="directions-list">
+            <li>From I-225: Take Exit 7 for Alameda Ave, head east for 2 miles, turn right on S Pitkin St, left on East Union Circle</li>
+            <li>From E-470: Take Exit 13 for Jewell Ave, head west for 1.5 miles, turn left on S Pitkin St, right on East Union Circle</li>
+            <li>Public Transit: RTD Bus Route 121 stops at Alameda & Pitkin, 5-minute walk to our location</li>
+            <li>We're located in the Union Professional Center with ample parking available</li>
+          </ul>
+        </div>
+        
+        <div class="directions-image fade-in">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="Exterior view of wellness center">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="contact-cta">
+    <div class="container">
+      <h2 class="fade-in">Ready to Begin Your Journey?</h2>
+      <p class="fade-in">Book your consultation today and take the first step toward radiant, confident you.</p>
+      <a href="#book" class="btn fade-in">Book Your Consultation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>K <span>|</span> Luxe Wellness</h3>
+          <p>Elevating wellness through personalized care and luxury treatments. Your journey to radiant confidence begins here.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column footer-contact">
+          <h4>Contact</h4>
+          <p>22411 East Union Circle<br>Aurora, CO 80015</p>
+          <p>(720) 555-0123</p>
+          <p>hello@kluxewellness.com</p>
+        </div>
+        
+        <div class="footer-column footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p style="font-size: 0.85rem; margin-bottom: var(--spacing-sm);">Subscribe for exclusive offers and wellness tips.</p>
+          <form>
+            <input type="email" placeholder="Your email address" aria-label="Email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 K | Luxe Wellness. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><span aria-hidden="true">IG</span></a>
+          <a href="#" aria-label="Facebook"><span aria-hidden="true">FB</span></a>
+          <a href="#" aria-label="Pinterest"><span aria-hidden="true">PN</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile CTA -->
+  <div class="mobile-cta">
+    <a href="#book" class="btn btn-primary">Book Now</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
