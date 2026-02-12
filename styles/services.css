@@ -1,0 +1,366 @@
+/* K | Luxe Wellness - Services Page Styles */
+
+.services-hero {
+  background: linear-gradient(135deg, rgba(44, 44, 44, 0.3) 0%, rgba(44, 44, 44, 0.1) 100%),
+              url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920') center/cover;
+  height: 50vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.services-hero-content h1 {
+  color: var(--color-white);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: var(--spacing-xs);
+}
+
+.services-hero-content p {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+/* Services Categories */
+.services-categories {
+  background-color: var(--color-cream);
+  padding: var(--spacing-xxl) 0;
+}
+
+.service-category {
+  margin-bottom: var(--spacing-xl);
+}
+
+.service-category:last-child {
+  margin-bottom: 0;
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-blush);
+}
+
+.category-header h2 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.category-header p {
+  color: var(--color-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Service Items */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.service-item {
+  background-color: var(--color-white);
+  padding: var(--spacing-md);
+  transition: box-shadow var(--transition-medium);
+  border: 1px solid transparent;
+}
+
+.service-item:hover {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+  border-color: var(--color-blush);
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-xs);
+}
+
+.service-header h3 {
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.service-meta {
+  display: flex;
+  gap: var(--spacing-sm);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-gold);
+}
+
+.service-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.service-description {
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: var(--spacing-sm);
+}
+
+.service-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-price {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.service-book {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-charcoal);
+  border-bottom: 1px solid var(--color-charcoal);
+  padding-bottom: 2px;
+  transition: all var(--transition-fast);
+}
+
+.service-book:hover {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+}
+
+/* Skincare Products Section */
+.skincare-section {
+  background-color: var(--color-pink-light);
+  padding: var(--spacing-xxl) 0;
+}
+
+.skincare-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.skincare-product {
+  background-color: var(--color-white);
+  overflow: hidden;
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.skincare-product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.skincare-image {
+  height: 300px;
+  overflow: hidden;
+  background-color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skincare-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.skincare-product:hover .skincare-image img {
+  transform: scale(1.05);
+}
+
+.skincare-info {
+  padding: var(--spacing-sm);
+  text-align: center;
+}
+
+.skincare-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.skincare-info p {
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.5;
+}
+
+.skincare-price {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.skincare-cta {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+}
+
+/* Custom Treatments CTA */
+.custom-treatments {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl) 0;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.custom-content h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.custom-content p {
+  color: var(--color-gray);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.custom-benefits {
+  list-style: none;
+  margin-bottom: var(--spacing-md);
+}
+
+.custom-benefits li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+  font-size: 0.95rem;
+  color: var(--color-charcoal);
+}
+
+.custom-benefits li::before {
+  content: '✓';
+  color: var(--color-gold);
+  font-weight: bold;
+}
+
+.custom-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: var(--color-cream);
+  padding: var(--spacing-xxl) 0;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: var(--spacing-lg) auto 0;
+}
+
+.faq-item {
+  background-color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: var(--spacing-md);
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--color-charcoal);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color var(--transition-fast);
+}
+
+.faq-question:hover {
+  color: var(--color-gold);
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: transform var(--transition-fast);
+}
+
+.faq-item.active .faq-question::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-medium);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+}
+
+.faq-answer p {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  color: var(--color-gray);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .skincare-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .custom-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .service-header {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .skincare-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .skincare-image {
+    height: 350px;
+  }
+  
+  .custom-image img {
+    height: 350px;
+  }
+}

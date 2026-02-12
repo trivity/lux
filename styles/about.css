@@ -1,0 +1,272 @@
+/* K | Luxe Wellness - About Page Styles */
+
+.about-hero {
+  background: linear-gradient(135deg, rgba(44, 44, 44, 0.3) 0%, rgba(44, 44, 44, 0.1) 100%),
+              url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1920') center/cover;
+  height: 60vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.about-hero-content h1 {
+  color: var(--color-white);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: var(--spacing-xs);
+}
+
+.about-hero-content p {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+/* Founder Section */
+.founder-section {
+  background-color: var(--color-cream);
+  padding: var(--spacing-xxl) 0;
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.founder-image {
+  position: relative;
+}
+
+.founder-image img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.founder-image::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid var(--color-gold);
+  z-index: -1;
+}
+
+.founder-content h2 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.founder-title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-md);
+}
+
+.founder-bio {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--color-gray);
+}
+
+.founder-bio p {
+  margin-bottom: var(--spacing-sm);
+}
+
+.founder-signature {
+  margin-top: var(--spacing-md);
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+/* Our Story Section */
+.story-section {
+  background-color: var(--color-pink-light);
+  padding: var(--spacing-xxl) 0;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.story-content h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.story-content p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--color-gray);
+  margin-bottom: var(--spacing-sm);
+}
+
+.story-values {
+  margin-top: var(--spacing-lg);
+}
+
+.story-value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.story-value-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.story-value-text h4 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
+}
+
+.story-value-text p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.story-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Team Section */
+.team-section {
+  background-color: var(--color-white);
+  padding: var(--spacing-xxl) 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member-image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--spacing-sm);
+}
+
+.team-member-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.team-member:hover .team-member-image img {
+  transform: scale(1.05);
+}
+
+.team-member-info h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.team-member-info p {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin: 0;
+}
+
+/* CTA Section */
+.about-cta {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.about-cta h2 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-md);
+}
+
+.about-cta .btn {
+  background-color: var(--color-white);
+  color: var(--color-gold);
+}
+
+.about-cta .btn:hover {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .founder-grid,
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .founder-image img,
+  .story-image img {
+    height: 500px;
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: 50vh;
+    min-height: 400px;
+  }
+  
+  .founder-image::before {
+    display: none;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-member-image img {
+    height: 400px;
+  }
+}

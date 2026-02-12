@@ -1,0 +1,220 @@
+/* K | Luxe Wellness - Mission Page Styles */
+
+.mission-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-pink-light) 0%, var(--color-cream) 100%);
+  padding: var(--spacing-xxl) var(--spacing-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-hero::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(201, 169, 98, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.mission-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(201, 169, 98, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.mission-content {
+  max-width: 900px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.mission-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-lg);
+  display: block;
+}
+
+.mission-statement {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-lg);
+}
+
+.mission-statement em {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.mission-divider {
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, var(--color-gold), transparent);
+  margin: 0 auto var(--spacing-lg);
+}
+
+.mission-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.mission-value {
+  text-align: center;
+}
+
+.mission-value-number {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-gold);
+  opacity: 0.5;
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+}
+
+.mission-value h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-xs);
+}
+
+.mission-value p {
+  font-size: 0.95rem;
+  color: var(--color-gray);
+  line-height: 1.7;
+}
+
+/* Alternative Layout with Image */
+.mission-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.mission-split-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-xl);
+  background-color: var(--color-cream);
+}
+
+.mission-split-image {
+  background: url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=1200') center/cover;
+  position: relative;
+}
+
+.mission-split-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(201, 169, 98, 0.2) 0%, transparent 100%);
+}
+
+.mission-text-block {
+  max-width: 500px;
+}
+
+.mission-quote {
+  position: relative;
+  padding-left: var(--spacing-md);
+  border-left: 2px solid var(--color-gold);
+  margin-top: var(--spacing-lg);
+}
+
+.mission-quote p {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+}
+
+/* CTA at Bottom */
+.mission-cta {
+  background-color: var(--color-gold);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.mission-cta h2 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+.mission-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-md);
+}
+
+.mission-cta .btn-secondary {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.mission-cta .btn-secondary:hover {
+  background-color: var(--color-white);
+  color: var(--color-gold);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mission-values {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .mission-split {
+    grid-template-columns: 1fr;
+  }
+  
+  .mission-split-image {
+    min-height: 400px;
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-hero {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  .mission-split-content {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  .mission-quote {
+    padding-left: var(--spacing-sm);
+  }
+  
+  .mission-quote p {
+    font-size: 1.15rem;
+  }
+}

@@ -1,0 +1,188 @@
+/* K | Luxe Wellness - Pop-up & Modal Styles */
+
+/* Base Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-medium);
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+  transition: transform var(--transition-medium);
+}
+
+.modal.active .modal-content {
+  transform: scale(1);
+}
+
+/* Monthly Promo Modal */
+.promo-modal .modal-content {
+  background: linear-gradient(135deg, var(--color-pink-light) 0%, var(--color-white) 100%);
+  border: 1px solid var(--color-blush);
+  text-align: center;
+}
+
+.promo-badge {
+  display: inline-block;
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-sm);
+}
+
+.promo-modal h3 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.promo-modal .promo-title {
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-sm);
+}
+
+.promo-modal p {
+  color: var(--color-gray);
+  margin-bottom: var(--spacing-md);
+}
+
+.promo-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color-gray);
+  line-height: 1;
+  transition: color var(--transition-fast);
+}
+
+.promo-close:hover {
+  color: var(--color-charcoal);
+}
+
+/* Newsletter Slide-in */
+.newsletter-slide {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--color-white);
+  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+  z-index: 1500;
+  transform: translateY(100%);
+  transition: transform var(--transition-medium);
+  padding: var(--spacing-md);
+  border-top: 3px solid var(--color-gold);
+}
+
+.newsletter-slide.active {
+  transform: translateY(0);
+}
+
+.newsletter-slide h4 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.newsletter-slide p {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  margin-bottom: var(--spacing-sm);
+}
+
+.newsletter-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: var(--color-gray);
+  line-height: 1;
+  transition: color var(--transition-fast);
+}
+
+.newsletter-close:hover {
+  color: var(--color-charcoal);
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-blush);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.newsletter-form input:focus {
+  border-color: var(--color-gold);
+}
+
+.newsletter-form .btn {
+  padding: 0.75rem 1.5rem;
+  white-space: nowrap;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .newsletter-slide {
+    max-width: 100%;
+    bottom: 70px; /* Above mobile CTA */
+  }
+  
+  .modal-content {
+    padding: var(--spacing-md);
+  }
+  
+  .promo-modal h3 {
+    font-size: 1.5rem;
+  }
+  
+  .promo-modal .promo-title {
+    font-size: 1.25rem;
+  }
+}
